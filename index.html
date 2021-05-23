@@ -1,0 +1,24 @@
+<!doctype html>
+	<head>
+		<link rel="stylesheet" href="style.css">
+		<title>JavaScript Speech to Text</title>
+	</head>
+	<body>
+		<h2> Speech to Text</h2>
+        <p>Click on the below button and speak something...</p>
+        <p><button type="button" onclick="runSpeechRecognition()">Speech to Text</button> &nbsp; <span id="action"></span></p>
+        <div id="output" class="hide"></div>
+        <h2> Text to Speech</h2>
+		<div><input type="text" id="text-to-speech" placeholder="Enter text to speak..."/></div>
+        <div><button type="button" onclick="textToAudio()">Speak</button></div>
+        <br/>
+        <div><small><b>NOTE:</b> Enter text and click on speak button.</small></div>
+        <h2>Click on the button to to retrieve previous searches</h2>
+        <div><button type="button" onclick="getAllSearches()">Get Search History</button>
+            <button type="button" onclick="removesearches()">Remove </button>   
+            <button type="button" onclick="clearHistory()">Clear History </button>   
+        </div>
+		<div id="op1"></div>
+	</body>
+    <script src="index.js"></script>
+</html>
